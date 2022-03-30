@@ -1,0 +1,363 @@
+import org.drools.core.process.core.datatype.impl.type.StringDataType;
+import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
+
+[
+  [
+    "name" : "Email",
+    "parameters" : [
+      "From" : new StringDataType(),
+      "To" : new StringDataType(),
+      "Subject" : new StringDataType(),
+      "Body" : new StringDataType()
+    ],
+    "displayName" : "Email",
+    "icon" : "defaultemailicon.gif"
+  ],
+
+  [
+    "name" : "Log",
+    "parameters" : [
+      "Message" : new StringDataType()
+    ],
+    "displayName" : "Log",
+    "icon" : "defaultlogicon.gif"
+  ],
+
+  [
+    "name" : "WebService",
+    "parameters" : [
+        "Url" : new StringDataType(),
+         "Namespace" : new StringDataType(),
+         "Interface" : new StringDataType(),
+         "Operation" : new StringDataType(),
+         "Parameter" : new StringDataType(),
+         "Endpoint" : new StringDataType(),
+         "Mode" : new StringDataType()
+    ],
+    "results" : [
+        "Result" : new ObjectDataType(),
+    ],
+    "displayName" : "WS",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+
+  [
+    "name" : "Rest",
+    "parameters" : [
+        "Url" : new StringDataType(),
+        "Method" : new StringDataType(),
+        "ConnectTimeout" : new StringDataType(),
+        "ReadTimeout" : new StringDataType(),
+        "Username" : new StringDataType(),
+        "Password" : new StringDataType()
+    ],
+    "results" : [
+        "Result" : new ObjectDataType(),
+    ],
+    "displayName" : "REST",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+ 
+  [
+    "name" : "CreateContractReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Create Contract",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+   [
+    "name" : "DesactivateContractReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Contract Desactivation",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+ 
+   [
+    "name" : "ChangerateplanReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Change Rate Plan",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  
+   [
+    "name" : "NotificationsmsReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "SMS Notification",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+   [
+    "name" : "NotificationsmsAfterRemoveFaFReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "SMS Notification After Remove FaF",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  
+   [
+    "name" : "VerifypendingReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Verify pending",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  
+  [
+    "name" : "getBalanceINReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "get balance IN",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  [
+    "name" : "adjustBalanceINReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "adjust balance IN",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+
+ 
+   [
+    "name" : "getCustomerPromoReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "get Customer Promo",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  [
+    "name" : "deletePromoReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "delete Promo",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+ [
+    "name" : "assignPromoReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "assign Promo",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+
+   [
+    "name" : "DesactivateNonCommonServicesReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Desactivate Non Common Services",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+   [
+    "name" : "ActivateServiceCoreReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Activate Service Core",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+   [
+    "name" : "DecryptBSCSReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Decrypt BSCS",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  [
+    "name" : "GetActionReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Get Action",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  [
+    "name" : "GetCugByCustomerReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Get Cug By Customer",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+   [
+    "name" : "ActivateServicesReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Activate Services",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+    [
+    "name" : "DesactivateServicesReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Desactivate Services",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+   [
+    "name" : "UpdateParametersReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Update Parameters",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+    [
+    "name" : "CheckRatePlanReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Check Rate Plan",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+ 
+    [
+    "name" : "AddCugsReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Add Cugs",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+    [
+    "name" : "ActivateOnHoldServiceReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Activate On Hold Service",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  [
+    "name" : "listActivateServicesWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "list Activate Services",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+    [
+    "name" : "ActivateServiceRessourceWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Activate Service Ressource",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+   [
+    "name" : "UpdateReengagementCommandeWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Update Reengagement Commande",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+   [
+    "name" : "GetMigrationGroupReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Get Migration Group",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+   [
+    "name" : "AdjustFactureReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Adjust Facture",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+   [
+    "name" : "GetListFaFReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "GetListFaF",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+ [
+    "name" : "AdjustFaFReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Adjust FaF",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  [
+    "name" : "CheckMaxFaFReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Check Max FaF",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+    [
+    "name" : "percistOrderReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "percist Order",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+    [
+    "name" : "majDfeReengWIH ",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "maj Dfe",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  
+    [
+    "name" : "injectionGPSReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Injection GPS",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+
+    [
+    "name" : "PrepareMigrationReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Prepare Migration",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+   [
+    "name" : "InsertBalanceReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Insert Balance IN",
+     "icon" : "defaultservicenodeicon.png"
+
+  ],
+   [
+    "name" : "PrepareGRHReengWIH",
+      "results" : [
+        "Result" : new StringDataType()
+    ],
+    "displayName" : "Prepare For GRH",
+     "icon" : "defaultservicenodeicon.png"
+
+  ]
+
+
+]
